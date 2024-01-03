@@ -56,7 +56,7 @@ class _QuestionsState extends State<Questions> {
                   children: [
                     Padding(
                         padding:
-                            EdgeInsets.only(left: 20.0, right: 20.0, top: 40.0),
+                            EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
                             child: Image.asset(
@@ -65,6 +65,7 @@ class _QuestionsState extends State<Questions> {
                               width: MediaQuery.of(context).size.width,
                               fit: BoxFit.cover,
                             ))),
+                            SizedBox(height: 20.0,),
                     Container(
                       width: MediaQuery.of(context).size.width,
                       padding: EdgeInsets.all(15),
@@ -80,7 +81,7 @@ class _QuestionsState extends State<Questions> {
                             fontWeight: FontWeight.w500),
                       ),
                     ),
-                    SizedBox(height: 20.0,),
+                    SizedBox(height: 10.0,),
                     Container(
                       width: MediaQuery.of(context).size.width,
                       padding: EdgeInsets.all(15),
@@ -91,7 +92,47 @@ class _QuestionsState extends State<Questions> {
                           ),
                           borderRadius: BorderRadius.circular(15)),
                       child: Text(
-                        "Cristiano Ronaldo",
+                        "Linoel Messi",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      padding: EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Color(0xff818181),
+                            width: 1.5,
+                          ),
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Text(
+                        "Sachin Tendulakar",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      padding: EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Color(0xff818181),
+                            width: 1.5,
+                          ),
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Text(
+                        "MS Dhoni",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 18.0,
@@ -102,7 +143,6 @@ class _QuestionsState extends State<Questions> {
                 ),
               ),
             ),
-            
           ],
         ),
       ),
